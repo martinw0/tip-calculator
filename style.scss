@@ -26,6 +26,7 @@ $white: hsl(0, 0%, 100%);
 }
 html {
     font-size: 62.5%;
+    font-family: 'Space Mono';
 }
 body {
     background-color: $white;
@@ -37,6 +38,31 @@ body {
     background-color: $white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 20px;
+    .bill {
+        input {
+            background-color: $very-light-grayish-cyan;
+            border: none;
+        }
+    }
+    .tip {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        label { grid-area: 1 / 1 / 2 / 3; }
+        // &:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+        // &:nth-child(3) { grid-area: 2 / 2 / 3 / 3; }
+        // &:nth-child(4) { grid-area: 3 / 1 / 4 / 2; }
+        // &:nth-child(5) { grid-area: 3 / 2 / 4 / 3; }
+        // &:nth-child(6) { grid-area: 4 / 1 / 5 / 2; }
+        // &:nth-child(7) { grid-area: 4 / 2 / 5 / 3; }
+    }
+    label {
+        display: block;
+        color: $dark-grayish-cyan;
+    }
 }
 .result {
     background-color: $very-dark-cyan;
