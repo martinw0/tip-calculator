@@ -14,6 +14,12 @@ body {
   background-color: hsl(0deg, 0%, 100%);
 }
 
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
 .background {
   background-color: hsl(185deg, 41%, 84%);
 }
@@ -24,9 +30,35 @@ body {
   border-top-right-radius: 10px;
   padding: 20px;
 }
-.calculator .bill input {
+.calculator .input {
+  position: relative;
+  margin-top: 10px;
+}
+.calculator .input input {
   background-color: hsl(189deg, 41%, 97%);
+  box-sizing: border-box;
   border: none;
+  height: 40px;
+  width: 100%;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 1.9rem;
+  font-weight: 700;
+  direction: rtl;
+  padding-right: 20px;
+}
+.calculator .input img {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.calculator label {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+.calculator .bill label {
+  margin: 0;
 }
 .calculator .tip {
   display: grid;
@@ -38,9 +70,18 @@ body {
 .calculator .tip label {
   grid-area: 1/1/2/3;
 }
-.calculator label {
-  display: block;
-  color: hsl(186deg, 14%, 43%);
+.calculator .tip button {
+  border: none;
+  border-radius: 7px;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.6rem;
+  height: 50px;
+}
+.calculator .tip button:last-of-type {
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(184deg, 14%, 56%);
 }
 
 .result {

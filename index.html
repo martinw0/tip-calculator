@@ -10,11 +10,14 @@
 <body>
     <main>
       <div class="background">
-        <img src="./images/logo.svg" alt="Logo">
+        <img class="logo" src="./images/logo.svg" alt="Logo">
         <div class="calculator">
           <div class="bill">
             <label for="bill">Bill</label>
-            <input type="text" name="bill">
+            <div class="input input-bill">
+              <input type="text" name="bill">
+              <img src="./images/icon-dollar.svg" alt="Dollar icon">
+            </div>
           </div>
           <div class="tip">
             <label for="tip">Tip</label>
@@ -27,7 +30,10 @@
           </div>
           <div class="people">
             <label for="peole">Number of people</label>
-            <input type="text" name="people" id="people">
+            <div class="input input-people">
+              <input type="text" name="people" id="people">
+              <img src="./images/icon-person.svg" alt="Person icon">
+            </div>
           </div>
         </div>
       </div>
